@@ -1,0 +1,233 @@
+.deleteConfirm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.backdrop {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+
+.dialog {
+  position: relative;
+  z-index: 1002;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+}
+
+.dialog h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.dialog .confirm {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dialog .confirm .btn:first-child {
+  background-color: var(--accent-danger);
+}
+
+.dialog .confirm .btn:first-child:hover {
+  background-color: var(--accent-danger-hover);
+}
+
+.dialog .confirm .btn:last-child {
+  background-color: var(--bg-input);
+  color: var(--text-main);
+}
+
+.dialog .confirm .btn:last-child:hover {
+  background-color: #475569;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--accent-primary);
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.SolnCardContainer {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--text-main);
+  width: 100%;
+}
+
+.solution_body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Toast/Alert Messages */
+.errorMessage,.successMessageSoln {
+  max-width: 640px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.errorMessage {
+  color: var(--accent-danger);
+  background-color: var(--error-bg);
+  border: 1px solid var(--error-border);
+}
+
+.successMessageSoln {
+  color: #4ade80;
+  background-color: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+
+}
+
+
+.solution {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.solved_by {
+  display: flex;
+  font-weight: 600;
+  color: var(--accent-primary);
+  font-size: 1rem;
+  justify-content: end;
+}
+
+.attachment {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.solved_at {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.update_del {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  justify-content: end;
+}
+
+.updateBtn,.deleteBtn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.updateBtn {
+  background-color: var(--bg-input);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.updateBtn:hover {
+  background-color: var(--border-color);
+}
+
+.deleteBtn {
+  background-color: var(--accent-danger);
+  color: #ffffff;
+}
+
+.deleteBtn:hover {
+  filter: brightness(0.9);
+}
+
+.updateBtn:active,
+.deleteBtn:active,
+.btn:active {
+  transform: scale(0.98);
+}
+
+.solution_body>.loc {
+  width: fit-content;
+  background-color: var(--bg-input);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  
+}
+
+.attachment a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.attachment a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+}
+
+.attachment a:visited {
+  color: var(--accent-primary);
+  opacity: 0.75;
+}

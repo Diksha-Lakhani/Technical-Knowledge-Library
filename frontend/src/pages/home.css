@@ -1,0 +1,103 @@
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--border-color);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  color: var(--text-main);
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: -0.025em;
+}
+
+.catHeader,
+.catLoc {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.catHeader:hover,
+.catLoc:hover {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-card);
+}
+
+/* Dropdown Container Lists */
+.dropdown_cat,
+.dropdown_loc {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: -8px;
+}
+
+/* Dropdown Option Items */
+.dropdown_item {
+  padding: 8px 12px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.dropdown_item:hover {
+  background-color: var(--bg-input);
+  color: var(--text-main);
+}
+
+.dropdown_item:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dropdown_item.selected {
+  background-color: var(--dropdown-selected);
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.prob_card_container {
+  margin-left: 250px;
+  padding: 15px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: calc(100vh - 60px);
+  box-sizing: border-box;
+  width: calc(100% - 250px);
+}
+
+.prob_card_container h2 {
+  color: var(--text-main);
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: -0.025em;
+}
+
+.prob_card {
+  display: grid;
+  gap: 30px;
+}

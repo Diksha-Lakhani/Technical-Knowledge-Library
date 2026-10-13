@@ -1,0 +1,186 @@
+/* Main Layout Container */
+.container {
+    min-height: 100vh;
+    padding-top: 60px;
+    /* Offset for fixed Navbar */
+    padding-bottom: 40px;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+/* Top Summary Stats Bar */
+.divContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.trend_container {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.Count,
+.total {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px 20px;
+    color: var(--text-muted);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 220px;
+}
+
+.Count{
+    flex:1;
+    color: var(--text-main);
+}
+
+.total {
+    background-color: var(--bg-input);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    font-weight: 600;
+    justify-content: center;
+}
+
+/* Charts Section Layout */
+.pieCharts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.pie {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.pie:hover {
+    border-color: var(--accent-primary);
+}
+
+.pie p {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    align-self: flex-start;
+}
+
+/* Recharts Custom Styling Controls */
+.recharts-text {
+    fill: var(--text-main) !important;
+}
+
+.recharts-tooltip-wrapper {
+    outline: none;
+}
+
+.recharts-default-tooltip {
+    background-color: var(--bg-input) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 6px !important;
+    color: var(--text-main) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.recharts-legend-item-text {
+    color: var(--text-muted) !important;
+    font-size: 0.85rem;
+}
+
+/* Error Alert */
+.errorMessage {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 6px;
+    color: var(--accent-danger);
+    font-size: 0.875rem;
+    box-sizing: border-box;
+}
+
+.errorMessage p {
+    margin: 0;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.catMax{
+    width: fit-content; 
+}
+
+/* Container holding the pie chart and table side-by-side */
+.catPieTable {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 32px;
+  box-sizing: border-box;
+}
+
+/* Section heading above pie chart / table */
+.catPieTable > p {
+  width: 100%;
+  color: var(--text-main);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+/* Styled Data Table */
+.dashCat {
+  flex: 1;
+  max-width: 400px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.dashCat th {
+  background-color: var(--bg-input);
+  color: var(--text-main);
+}
+
+.dashCat td {
+  color: var(--text-muted);
+}
+
+/* Subtle row hover effect */
+.dashCat tbody tr:hover td {
+  color: var(--text-main);
+}

@@ -1,0 +1,105 @@
+/* Remarks textarea */
+.remarksInput {
+  width: 100%;
+  min-height: 60px;
+  padding: 10px 14px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.remarksInput:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* Approve / Reject buttons */
+.approveBtn,.rejectBtn {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
+}
+
+.approveBtn {
+  background-color: var(--accent-primary);
+  color: #ffffff;
+}
+
+.approveBtn:hover {
+  background-color: var(--accent-hover);
+}
+
+.rejectBtn {
+  background-color: rgba(239, 68, 68, 0.4);
+  color: var(--accent-danger);
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.rejectBtn:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: var(--accent-danger);
+}
+
+.approveBtn:active,
+.rejectBtn:active {
+  transform: scale(0.97);
+}
+
+.probSol td {
+  transition: background-color 0.2s ease;
+}
+
+.probSol tr:hover td {
+  background-color: var(--bg-input); /* Change to your preferred hover color */
+}
+
+td a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+td a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+}
+
+td a:visited {
+  color: var(--accent-primary);
+  opacity: 0.75;
+}
+
+.sidebaritem{
+    width: 100%;
+  padding: 10px 14px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.sidebaritem:hover{
+    border-color: var(--accent-primary);
+  background-color: var(--bg-card);
+
+}

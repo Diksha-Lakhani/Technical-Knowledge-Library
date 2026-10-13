@@ -1,0 +1,134 @@
+.container_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 10px 9px;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container_navbar button {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.container_navbar button:hover {
+    background-color: var(--bg-input);
+    border-color: var(--text-muted);
+}
+
+.container_navbar button:active {
+    transform: scale(0.98);
+}
+
+/* Search Input Styling */
+.search {
+    width: 100%;
+    padding: 8px 14px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search::placeholder {
+    color: var(--text-muted);
+}
+
+.search:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.add_profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.add_profile .add_btn {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.add_profile .add_btn:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.add_profile .profile_btn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBtn{
+    display: flex;
+    gap: 15px;
+}
+
+.searchBox {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.searchDropDown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+.searchResultItem {
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.searchResultItem:hover {
+    background-color: var(--bg-input);
+}
+
+.searchTitle {
+    color: var(--text-main);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.searchDescrip {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    margin: 2px 0 0 0;
+}

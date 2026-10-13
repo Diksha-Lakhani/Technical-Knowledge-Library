@@ -1,0 +1,132 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    box-sizing: border-box;
+}
+
+.prob_container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.backBox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.backBtn {
+    background-color: var(--bg-input);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.backBtn:hover {
+    background-color: var(--border-color);
+}
+
+.backBtn:active {
+    transform: scale(0.98);
+}
+
+.problem_box {
+    position: relative;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.addBtnView {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: var(--accent-primary);
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.addBtnView:hover {
+    background-color: var(--accent-hover);
+}
+
+.addBtnView:active {
+    transform: scale(0.98);
+}
+
+.problem {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    padding-right: 140px;
+    /* Avoid overlapping with Add Solution button */
+}
+
+.description {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.cat_loc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    text-transform: capitalize;
+}
+
+.cat_loc p {
+    display: inline-block;
+    background-color: var(--bg-input);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.catLoc_sol{
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.cat,.loc,.solution_count,.created_at {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.solution_box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 12px;
+}

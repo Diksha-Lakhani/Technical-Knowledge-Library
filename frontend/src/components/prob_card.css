@@ -1,0 +1,75 @@
+.probCardContainer {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 30px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.probCardContainer:hover {
+    border-color: var(--accent-primary);
+}
+
+.prob {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.prob h2 {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.prob p {
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.soln_count_div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.solution_count {
+    background-color: var(--bg-input);
+    color: var(--accent-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Container for category and location tags */
+.cat_loc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6px;
+    text-transform: capitalize;
+}
+
+.cat_loc p {
+    display: inline-block;
+    background-color: var(--bg-input);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}

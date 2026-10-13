@@ -1,0 +1,49 @@
+.login {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.login:hover {
+  background-color: var(--accent-hover);
+}
+
+.login:active {
+  transform: scale(0.98);
+}
+
+.loginbox select {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loginbox select:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.successLoginPopUp {
+    color:rgb(35, 141, 52) !important;
+    font-size: 0.875rem;
+    margin-top: 25px;
+    background-color: rgba(111, 239, 136, 0.321);
+    border: 1px solid rgba(68, 239, 97, 0.2);
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
